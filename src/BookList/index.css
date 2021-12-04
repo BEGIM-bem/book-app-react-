@@ -1,0 +1,10 @@
+.deleteBtn {
+  background: blue;
+  border: 1px solid black;
+  height: 25px;
+  width: 65px;
+}
+
+.f {
+  padding-left: 10px;
+}

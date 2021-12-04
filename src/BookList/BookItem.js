@@ -1,6 +1,8 @@
 import axios from "axios";
+import styled from "styled-components";
 
 import { Flex, FlexedItem } from "../styles/Flex";
+import './index.css'
 
 export const BookItem = ({ author, title, id }) => {
 
@@ -17,12 +19,13 @@ export const BookItem = ({ author, title, id }) => {
 
   return (
     <FlexedItem>
-      <li>
-    {title, author} 
+      <li> Title ::: 
+     {      title}<br />
+     Author  :::{     author} 
       
-      </li>
+      </li> 
       <Flex>
-        <button onClick={() => removeBook(id)}>DELETE</button>
+        <button  className ='deleteBtn' onClick={() => removeBook(id)}>DELETE</button>
      
       </Flex>
     </FlexedItem>

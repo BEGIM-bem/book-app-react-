@@ -8,8 +8,8 @@ export const NavBar = () => {
         <>
             <Container>
                 <Flex>
-                    <Link to="/"><h1 className ='title' >Book App</h1></Link>
-                    <Link to="/create-book">+Add Book</Link> 
+                    <Link className ='title' to="/"><h1 className ='title' >Book App</h1></Link>
+                    <Link className ='createTile' to="/create-book">+Add Book</Link> 
                 </Flex> 
             </Container>
         </>

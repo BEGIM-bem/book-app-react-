@@ -35,7 +35,7 @@ export const BookList = () => {
     }
 
     if(isLoading){
-        return <Container><Loader type="ThreeDots" height={50} className ='Loader'  /></Container>
+        return <Container><Loader type="ThreeDots" color = 'black' height={50} className ='Loader'  /></Container>
     }
     
     return (

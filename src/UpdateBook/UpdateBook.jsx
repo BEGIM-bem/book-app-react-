@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react"
 import { Flex } from "../styles/Flex";
+import './index.css'
 
 export const UpdateBook = ({id}) => {
 
@@ -41,7 +42,7 @@ export const UpdateBook = ({id}) => {
                             <label htmlFor="author">Author: </label>
                             <input id="author" type="text" name="title" value={userState.title} onChange={changeHandler}/>
                         </div>
-                        <button type="submit">Edit</button>
+                        <button type="submit" className = 'ButtonEdit'>Edit</button>
                     </Flex>
                     <hr style={{height:"1px", background:"black"}} />
                 </form>
