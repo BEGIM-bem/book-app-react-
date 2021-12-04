@@ -1,19 +1,25 @@
+import axios from "axios";
+
 import { Flex, FlexedItem } from "../styles/Flex";
 
 export const BookItem = ({ author, title, id }) => {
 
   const removeBook = (id) => {
+
     if (window.confirm("Are u sure?")) {
-      fetch(`http://localhost:4000/books/${id}`, {
-        method: "DELETE",
-      });
+      axios.delete(`http://localhost:4000/books/${id}`)
+      document.location.reload();
+   
     }
+    
   };
+
 
   return (
     <FlexedItem>
       <li>
-        {author}-----{title}
+    {title, author} 
+      
       </li>
       <Flex>
         <button onClick={() => removeBook(id)}>DELETE</button>

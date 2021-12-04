@@ -7,6 +7,7 @@ import { CreateBook } from "../CreateBook/CreateBook";
 import { UpdateBook } from "../UpdateBook/UpdateBook";
 import { Link } from "react-router-dom";
 
+
 export const BookList = () => {
 
 
@@ -34,7 +35,7 @@ export const BookList = () => {
     }
 
     if(isLoading){
-        return <Container><Loader type="ThreeDots" color="black" height={30} /></Container>
+        return <Container><Loader type="ThreeDots" height={50} className ='Loader'  /></Container>
     }
     
     return (

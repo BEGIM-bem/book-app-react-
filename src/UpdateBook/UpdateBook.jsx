@@ -20,6 +20,7 @@ export const UpdateBook = ({id}) => {
         
     const changeHandler = (e)=> {
         const value = e.target.value;
+        console.log("edit: ", e.target.value)
         setUserState({
         ...userState,
         [e.target.name]: value

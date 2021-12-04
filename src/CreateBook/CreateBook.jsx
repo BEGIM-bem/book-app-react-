@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
+import './index.css'
 
 export const CreateBook = () => {
 
@@ -27,16 +28,18 @@ export const CreateBook = () => {
 
     return (
         <>
-            <form onSubmit={()=>submitHandler()}>
-                <div>
+            <form  className='form'  onSubmit={()=>submitHandler()}>
+                <div class ='div'>
                     <label htmlFor="title">Title: </label>
-                    <input id="title" type="text" name="author" value={userState.author} onChange={changeHandler}/>
+                    <input className ='input' id="title" type="text" name="author" value={userState.author} onChange={changeHandler}/>
+                 
                 </div>
-                <div>
+         
+                <div className ='div'>
                     <label htmlFor="author">Author: </label>
-                    <input id="author" type="text" name="title" value={userState.title} onChange={changeHandler}/>
+                    <input id="author" className ='input input2' type="text" name="title" value={userState.title} onChange={changeHandler}/>
                 </div>
-                <button type="submit">Submit</button>
+                <button className ='button' type="submit">Submit</button>
             </form>
         </>
     )
